@@ -132,6 +132,24 @@
             </objects>
             <point key="canvasLocation" x="947.82608695652186" y="30.803571428571427"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="EbC-aX-fvf">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="2wD-ta-cE8" customClass="WebViewController" customModule="QBSWDevel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8EJ-NE-GFw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FWg-hW-glm"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="AhS-XF-R4T"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGE-tK-FYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2623" y="50"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

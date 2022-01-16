@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class RepoCell: UITableViewCell {
     
@@ -45,5 +46,14 @@ extension RepoCell: Setupable {
         self.starLabel?.text = "Stars count: \(viewModel.stars)"
         self.descLabel?.text = viewModel.desc
         self.updatedLabel?.text = "Updated: \(viewModel.formattedUpdateDate)"
+        
+        let placeholder = UIImage(named: "placeholder")
+        self.ownerImage.sd_setImage(with: URL(string: viewModel.ownerImageUrl), placeholderImage: placeholder, completed: { (image, error, cacheType, url) in
+            if error == nil {
+                self.ownerImage?.image = image
+            } else {
+                self.ownerImage?.image = placeholder
+            }
+        })
     }
 }

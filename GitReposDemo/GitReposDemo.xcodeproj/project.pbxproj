@@ -21,15 +21,15 @@
 		77C2B32927933351002D42CE /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B32827933351002D42CE /* AppError.swift */; };
 		77C2B32B2793339F002D42CE /* RealGitRepositoryWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B32A2793339F002D42CE /* RealGitRepositoryWebService.swift */; };
 		77C2B32D279337FB002D42CE /* RepoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B32C279337FB002D42CE /* RepoListViewModel.swift */; };
-		77C2B32F2793395D002D42CE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B32E2793395D002D42CE /* Router.swift */; };
-		77C2B33527935511002D42CE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 77C2B33427935511002D42CE /* RxCocoa */; };
-		77C2B33727935511002D42CE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 77C2B33627935511002D42CE /* RxSwift */; };
 		77C2B33C2794010F002D42CE /* MockedRepos.json in Resources */ = {isa = PBXBuildFile; fileRef = 77C2B33B2794010F002D42CE /* MockedRepos.json */; };
 		77C2B33E27940160002D42CE /* MockedGitRepositoryWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B33D27940160002D42CE /* MockedGitRepositoryWebService.swift */; };
 		77C2B39927941B4F002D42CE /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B39827941B4F002D42CE /* JsonLoader.swift */; };
 		77C2B39F2794658B002D42CE /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B39E2794658B002D42CE /* UITableViewExt.swift */; };
 		77C2B3A527946980002D42CE /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B3A427946980002D42CE /* RepoCell.swift */; };
 		77C2B3A727946C2F002D42CE /* RepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B3A627946C2F002D42CE /* RepoCellViewModel.swift */; };
+		77C2B3A927947D20002D42CE /* UIStoryboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B3A827947D20002D42CE /* UIStoryboardExt.swift */; };
+		77C2B3AB27947D4B002D42CE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B3AA27947D4B002D42CE /* WebViewController.swift */; };
+		77C2B3AE279487AB002D42CE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 77C2B3AD279487AB002D42CE /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +68,14 @@
 		77C2B32827933351002D42CE /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		77C2B32A2793339F002D42CE /* RealGitRepositoryWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealGitRepositoryWebService.swift; sourceTree = "<group>"; };
 		77C2B32C279337FB002D42CE /* RepoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModel.swift; sourceTree = "<group>"; };
-		77C2B32E2793395D002D42CE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		77C2B33B2794010F002D42CE /* MockedRepos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockedRepos.json; sourceTree = "<group>"; };
 		77C2B33D27940160002D42CE /* MockedGitRepositoryWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedGitRepositoryWebService.swift; sourceTree = "<group>"; };
 		77C2B39827941B4F002D42CE /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
 		77C2B39E2794658B002D42CE /* UITableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
 		77C2B3A427946980002D42CE /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		77C2B3A627946C2F002D42CE /* RepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCellViewModel.swift; sourceTree = "<group>"; };
+		77C2B3A827947D20002D42CE /* UIStoryboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExt.swift; sourceTree = "<group>"; };
+		77C2B3AA27947D4B002D42CE /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C2B33727935511002D42CE /* RxSwift in Frameworks */,
-				77C2B33527935511002D42CE /* RxCocoa in Frameworks */,
+				77C2B3AE279487AB002D42CE /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,6 @@
 				77C2B39D2794653E002D42CE /* Helpers */,
 				77C2B39C279464AF002D42CE /* Storyboards */,
 				77C2B338279400A7002D42CE /* Resources */,
-				77C2B3272793330A002D42CE /* Common */,
 				77C2B322279332AA002D42CE /* Repositories */,
 				77C2B31F279331F9002D42CE /* UI */,
 				77C2B31E279331E9002D42CE /* Model */,
@@ -205,15 +204,6 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		77C2B3272793330A002D42CE /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				77C2B32E2793395D002D42CE /* Router.swift */,
-				77C2B39827941B4F002D42CE /* JsonLoader.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		77C2B338279400A7002D42CE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,7 +224,9 @@
 		77C2B39D2794653E002D42CE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				77C2B39827941B4F002D42CE /* JsonLoader.swift */,
 				77C2B39E2794658B002D42CE /* UITableViewExt.swift */,
+				77C2B3A827947D20002D42CE /* UIStoryboardExt.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -251,6 +243,7 @@
 		77C2B3A12794671D002D42CE /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				77C2B3AA27947D4B002D42CE /* WebViewController.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -280,8 +273,7 @@
 			);
 			name = GitReposDemo;
 			packageProductDependencies = (
-				77C2B33427935511002D42CE /* RxCocoa */,
-				77C2B33627935511002D42CE /* RxSwift */,
+				77C2B3AD279487AB002D42CE /* SDWebImage */,
 			);
 			productName = GitReposDemo;
 			productReference = 77C2B2E9279331A5002D42CE /* GitReposDemo.app */;
@@ -356,7 +348,7 @@
 			);
 			mainGroup = 77C2B2E0279331A5002D42CE;
 			packageReferences = (
-				77C2B33327935511002D42CE /* XCRemoteSwiftPackageReference "RxSwift" */,
+				77C2B3AC279487AB002D42CE /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 77C2B2EA279331A5002D42CE /* Products */;
 			projectDirPath = "";
@@ -406,16 +398,17 @@
 				77C2B39F2794658B002D42CE /* UITableViewExt.swift in Sources */,
 				77C2B324279332BB002D42CE /* WebServiceProtocol.swift in Sources */,
 				77C2B39927941B4F002D42CE /* JsonLoader.swift in Sources */,
+				77C2B3A927947D20002D42CE /* UIStoryboardExt.swift in Sources */,
 				77C2B33E27940160002D42CE /* MockedGitRepositoryWebService.swift in Sources */,
 				77C2B3A527946980002D42CE /* RepoCell.swift in Sources */,
 				77C2B326279332DA002D42CE /* GitRepository.swift in Sources */,
 				77C2B32B2793339F002D42CE /* RealGitRepositoryWebService.swift in Sources */,
-				77C2B32F2793395D002D42CE /* Router.swift in Sources */,
 				77C2B2ED279331A5002D42CE /* AppDelegate.swift in Sources */,
 				77C2B3A727946C2F002D42CE /* RepoCellViewModel.swift in Sources */,
 				77C2B2EF279331A5002D42CE /* SceneDelegate.swift in Sources */,
 				77C2B32927933351002D42CE /* AppError.swift in Sources */,
 				77C2B32D279337FB002D42CE /* RepoListViewModel.swift in Sources */,
+				77C2B3AB27947D4B002D42CE /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,26 +752,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		77C2B33327935511002D42CE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		77C2B3AC279487AB002D42CE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		77C2B33427935511002D42CE /* RxCocoa */ = {
+		77C2B3AD279487AB002D42CE /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 77C2B33327935511002D42CE /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		77C2B33627935511002D42CE /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 77C2B33327935511002D42CE /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
+			package = 77C2B3AC279487AB002D42CE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

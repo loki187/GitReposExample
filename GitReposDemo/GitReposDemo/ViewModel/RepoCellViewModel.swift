@@ -21,6 +21,7 @@ class RepoCellViewModel: TableViewCellRepresentable {
     var stars: String
     var updatedAt: String
     var ownerImageUrl: String
+    var htmlUrl: String
     
     var formattedUpdateDate: String {
         let dateFormatter = DateFormatter()
@@ -42,5 +43,6 @@ class RepoCellViewModel: TableViewCellRepresentable {
         self.stars = "\(repo.stargazersCount)"
         self.updatedAt = repo.updatedAt
         self.ownerImageUrl = repo.owner.avatarUrl ?? ""
+        self.htmlUrl = repo.htmlUrl
     }
 }
