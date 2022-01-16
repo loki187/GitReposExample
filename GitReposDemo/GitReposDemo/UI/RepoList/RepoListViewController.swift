@@ -34,6 +34,8 @@ class RepoListViewController: UIViewController {
         self.title = "Apple repositories"
         self.navigationController?.navigationBar.prefersLargeTitles = true
 
+        tableView?.registerCell(LoadingCell.self)
+        tableView?.registerCell(ErrorCell.self)
         tableView?.estimatedRowHeight = 100
         tableView?.tableFooterView = UIView()
     }

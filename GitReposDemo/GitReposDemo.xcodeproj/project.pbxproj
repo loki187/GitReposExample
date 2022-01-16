@@ -30,6 +30,10 @@
 		77C2B3A927947D20002D42CE /* UIStoryboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B3A827947D20002D42CE /* UIStoryboardExt.swift */; };
 		77C2B3AB27947D4B002D42CE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B3AA27947D4B002D42CE /* WebViewController.swift */; };
 		77C2B3AE279487AB002D42CE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 77C2B3AD279487AB002D42CE /* SDWebImage */; };
+		77C2B3DE27949124002D42CE /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C2B3CC27949124002D42CE /* LoadingCell.xib */; };
+		77C2B3DF27949124002D42CE /* ErrorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C2B3CD27949124002D42CE /* ErrorCell.xib */; };
+		77C2B3E427949124002D42CE /* ErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B3D227949124002D42CE /* ErrorCell.swift */; };
+		77C2B3E727949124002D42CE /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2B3D527949124002D42CE /* LoadingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		77C2B3A627946C2F002D42CE /* RepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCellViewModel.swift; sourceTree = "<group>"; };
 		77C2B3A827947D20002D42CE /* UIStoryboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExt.swift; sourceTree = "<group>"; };
 		77C2B3AA27947D4B002D42CE /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		77C2B3CC27949124002D42CE /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		77C2B3CD27949124002D42CE /* ErrorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorCell.xib; sourceTree = "<group>"; };
+		77C2B3D227949124002D42CE /* ErrorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCell.swift; sourceTree = "<group>"; };
+		77C2B3D527949124002D42CE /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +196,7 @@
 		77C2B31F279331F9002D42CE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				77C2B3C527949124002D42CE /* GeneralViews */,
 				77C2B3A12794671D002D42CE /* WebView */,
 				77C2B3A027946712002D42CE /* RepoList */,
 			);
@@ -254,6 +263,17 @@
 				77C2B3A427946980002D42CE /* RepoCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		77C2B3C527949124002D42CE /* GeneralViews */ = {
+			isa = PBXGroup;
+			children = (
+				77C2B3CC27949124002D42CE /* LoadingCell.xib */,
+				77C2B3CD27949124002D42CE /* ErrorCell.xib */,
+				77C2B3D227949124002D42CE /* ErrorCell.swift */,
+				77C2B3D527949124002D42CE /* LoadingCell.swift */,
+			);
+			path = GeneralViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +386,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C2B3DF27949124002D42CE /* ErrorCell.xib in Resources */,
+				77C2B3DE27949124002D42CE /* LoadingCell.xib in Resources */,
 				77C2B33C2794010F002D42CE /* MockedRepos.json in Resources */,
 				77C2B2F9279331A7002D42CE /* LaunchScreen.storyboard in Resources */,
 				77C2B2F6279331A7002D42CE /* Assets.xcassets in Resources */,
@@ -404,8 +426,10 @@
 				77C2B326279332DA002D42CE /* GitRepository.swift in Sources */,
 				77C2B32B2793339F002D42CE /* RealGitRepositoryWebService.swift in Sources */,
 				77C2B2ED279331A5002D42CE /* AppDelegate.swift in Sources */,
+				77C2B3E427949124002D42CE /* ErrorCell.swift in Sources */,
 				77C2B3A727946C2F002D42CE /* RepoCellViewModel.swift in Sources */,
 				77C2B2EF279331A5002D42CE /* SceneDelegate.swift in Sources */,
+				77C2B3E727949124002D42CE /* LoadingCell.swift in Sources */,
 				77C2B32927933351002D42CE /* AppError.swift in Sources */,
 				77C2B32D279337FB002D42CE /* RepoListViewModel.swift in Sources */,
 				77C2B3AB27947D4B002D42CE /* WebViewController.swift in Sources */,
