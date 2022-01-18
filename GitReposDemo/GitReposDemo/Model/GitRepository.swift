@@ -25,6 +25,18 @@ struct GitRepository: Codable {
         case htmlUrl = "html_url"
         case owner
     }
+    
+    var formattedUpdateDate: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+
+        let dateFormatterString = DateFormatter()
+        dateFormatterString.dateFormat = "dd.MM.yyyy HH:mm"
+        if let date = dateFormatter.date(from: updatedAt) {
+            return dateFormatterString.string(from: date)
+        }
+        return "N/A"
+    }
 }
 
 extension GitRepository {

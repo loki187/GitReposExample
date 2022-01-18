@@ -45,7 +45,7 @@ extension RepoCell: Setupable {
         self.nameLabel?.text = viewModel.fullName
         self.starLabel?.text = "Stars count: \(viewModel.stars)"
         self.descLabel?.text = viewModel.desc
-        self.updatedLabel?.text = "Updated: \(viewModel.formattedUpdateDate)"
+        self.updatedLabel?.text = "Updated: \(viewModel.updatedAt)"
         
         let placeholder = UIImage(named: "placeholder")
         self.ownerImage.sd_setImage(with: URL(string: viewModel.ownerImageUrl), placeholderImage: placeholder, completed: { (image, error, cacheType, url) in
